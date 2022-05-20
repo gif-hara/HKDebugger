@@ -1,18 +1,17 @@
 using System;
-using HKDebugger.UIElements;
 using UnityEngine.UIElements;
 
 namespace HKDebugger.DebugCommand
 {
-    public class DebugCommandUIPresenter
+    public class DebugCommandPresenter
     {
         private NodeData root;
 
         private NodeData current;
 
-        private DebugCommandUIDocument document;
+        private DebugCommandDocument document;
 
-        public DebugCommandUIPresenter(DebugCommandUIDocument document)
+        public DebugCommandPresenter(DebugCommandDocument document)
         {
             this.root = new NodeData(".", null, null);
             this.current = this.root;
@@ -57,11 +56,11 @@ namespace HKDebugger.DebugCommand
             listView.makeItem = () => this.document.ElementAsset.Instantiate();
             listView.bindItem = (v, i) =>
             {
-                v.Q<Element>().Register(this, listItems[i]);
+                v.Q<DebugCommandDocumentElement>().Register(this, listItems[i]);
             };
             listView.unbindItem = (v, i) =>
             {
-                v.Q<Element>().UnRegister();
+                v.Q<DebugCommandDocumentElement>().UnRegister();
             };
             listView.itemsSource = listItems;
 

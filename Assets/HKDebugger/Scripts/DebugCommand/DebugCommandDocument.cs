@@ -7,7 +7,7 @@ namespace HKDebugger.DebugCommand
     /// DebugCommandのView
     /// </summary>
     [RequireComponent(typeof(UIDocument))]
-    public class DebugCommandUIDocument : Document
+    public class DebugCommandDocument : Document
     {
         [SerializeField]
         private VisualTreeAsset elementAsset;

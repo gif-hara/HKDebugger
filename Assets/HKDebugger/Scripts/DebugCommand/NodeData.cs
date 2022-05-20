@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HKDebugger
+namespace HKDebugger.DebugCommand
 {
     public class NodeData
     {

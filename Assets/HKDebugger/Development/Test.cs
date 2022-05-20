@@ -1,16 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using HKDebugger;
 using HKDebugger.DebugCommand;
-using HKDebugger.UIElements;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 public class Test : MonoBehaviour
 {
     [SerializeField]
-    private DebugCommandUIDocument document;
+    private DebugCommandDocument document;
 
     [SerializeField]
     private VisualTreeAsset elementAsset;
@@ -47,7 +43,7 @@ public class Test : MonoBehaviour
         // };
         // listView.itemsSource = listItems;
 
-        var debugCommandUIPresenter = new DebugCommandUIPresenter(this.document);
+        var debugCommandUIPresenter = new DebugCommandPresenter(this.document);
         debugCommandUIPresenter.AddCommand("HKDebuggerSystem/Initialize", () => HKDebuggerSystem.Initialize());
         debugCommandUIPresenter.AddCommand("HKDebuggerSystem/Finalize", () => HKDebuggerSystem.Finalize());
         debugCommandUIPresenter.AddCommand("Test0/Hoge/Command", () => Debug.Log("Command"));

@@ -1,23 +1,22 @@
-using HKDebugger.DebugCommand;
 using UnityEngine.UIElements;
 
-namespace HKDebugger.UIElements
+namespace HKDebugger.DebugCommand
 {
-    public class Element : VisualElement
+    public class DebugCommandDocumentElement : VisualElement
     {
         public new class UxmlTraits : VisualElement.UxmlTraits
         {
         }
 
-        public new class UxmlFactory : UxmlFactory<Element, UxmlTraits>
+        public new class UxmlFactory : UxmlFactory<DebugCommandDocumentElement, UxmlTraits>
         {
         }
 
-        private DebugCommandUIPresenter presenter;
+        private DebugCommandPresenter presenter;
         
         private NodeData item;
         
-        public void Register(DebugCommandUIPresenter presenter, NodeData item)
+        public void Register(DebugCommandPresenter presenter, NodeData item)
         {
             this.presenter = presenter;
             this.item = item;
