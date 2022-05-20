@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/HKDebugger/USS/Test.uss?fileID=7433441132597879392&amp;guid=6b96ec3ca8e9f00439961f0def1ad398&amp;type=3#Test" />
+    <ui:GroupBox style="flex-direction: row; align-items: stretch; justify-content: space-between; padding-right: 3px; margin-top: 1px;">
+        <ui:GroupBox style="flex-direction: row; align-items: stretch; justify-content: flex-start; margin-top: 1px;">
+            <ui:Button display-tooltip-when-elided="true" name="PreviousButton" class="title title-button" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="Path" class="title-label" style="left: 0;" />
+        </ui:GroupBox>
+        <ui:GroupBox style="flex-direction: row; margin-top: 1px;">
+            <ui:Button display-tooltip-when-elided="true" name="MenuButton" class="title-button" style="white-space: nowrap; transform-origin: right; translate: 0 0; right: auto; align-items: flex-start; justify-content: space-around; background-image: url(&apos;project://database/Assets/HKDebugger/Textures/hamburger.png?fileID=2800000&amp;guid=0b0fdf45a1c640e4e9889ab7a3311aba&amp;type=3#hamburger&apos;); width: 32px; height: 32px; flex-shrink: 0; flex-basis: auto;" />
+            <ui:Button display-tooltip-when-elided="true" name="CloseButton" class="title-button" style="white-space: nowrap; transform-origin: right; translate: 0 0; right: auto; align-items: flex-start; justify-content: space-around; background-image: url(&apos;project://database/Assets/HKDebugger/Textures/cancel.png?fileID=2800000&amp;guid=1156fdee0993d3f448e1240313692f77&amp;type=3#cancel&apos;); width: 32px; height: 32px; flex-shrink: 0; flex-basis: auto;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+    <ui:ListView focusable="true" virtualization-method="DynamicHeight" selection-type="None" name="ElementListView" />
+</ui:UXML>

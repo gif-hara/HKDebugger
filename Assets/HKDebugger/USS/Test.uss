@@ -1,0 +1,54 @@
+.title-label {
+    font-size: 20px;
+    -unity-text-align: middle-left;
+}
+
+.title-button {
+    white-space: nowrap;
+    -unity-text-align: middle-center;
+    height: 32px;
+    width: 32px;
+    margin-left: 3px;
+    padding-left: 3px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: auto;
+    padding-right: 3px;
+    background-image: url('project://database/Assets/HKDebugger/Textures/previous.png?fileID=2800000&guid=0641ddc6f327d85448e40acd1568092c&type=3#previous');
+}
+
+.element {
+    font-size: 20px;
+    height: 36px;
+}
+
+.element-label {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    justify-content: flex-start;
+    align-items: auto;
+    -unity-text-align: middle-left;
+    font-size: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -unity-background-scale-mode: stretch-to-fill;
+    transform-origin: center;
+    top: auto;
+    bottom: 50%;
+    translate: 0 50%;
+}
+
+.element-icon {
+    background-image: url('project://database/Assets/HKDebugger/Textures/folder.png?fileID=2800000&guid=c1f4405a4ef4637468079986ebad7540&type=3#folder');
+    width: 32px;
+    height: 32px;
+    min-width: auto;
+    min-height: auto;
+    align-items: auto;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
