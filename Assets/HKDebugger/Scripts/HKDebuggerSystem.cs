@@ -15,6 +15,8 @@ namespace HKDebugger
 
         private static GameObject rootObject;
 
+        private static readonly List<Document> documents = new ();
+
         public static void Initialize()
         {
             if (rootObject != null)
@@ -34,6 +36,20 @@ namespace HKDebugger
             }
             
             Object.Destroy(rootObject);
+        }
+
+        public static TDocument AddDocument<TDocument>(TDocument documentPrefab) where TDocument : Document
+        {
+            var instance = Object.Instantiate(documentPrefab, rootObject.transform);
+            documents.Add(instance);
+
+            return instance;
+        }
+
+        public static void DestroyDocument(Document document)
+        {
+            documents.Remove(document);
+            Object.Destroy(document.gameObject);
         }
     }
 }

@@ -11,13 +11,12 @@ namespace HKDebugger.DebugCommand
 
         private DebugCommandDocument document;
 
-        public DebugCommandPresenter(DebugCommandDocument document)
+        public DebugCommandPresenter(DebugCommandDocument documentPrefab)
         {
             this.root = new NodeData(".", null, null);
-            this.current = this.root;
-            this.document = document;
+            this.document = HKDebuggerSystem.AddDocument(documentPrefab);
             
-            this.DeployNodeData(this.current);
+            this.DeployNodeData(this.root);
             
             this.document.PreviousButton.clicked += () =>
             {
