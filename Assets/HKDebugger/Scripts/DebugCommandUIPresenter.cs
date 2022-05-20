@@ -25,7 +25,15 @@ namespace HKDebugger
             
             this.DeployNodeData(this.current);
             
-            this.document.PreviousButton.clicked += () => Debug.Log("PreviousButton");
+            this.document.PreviousButton.clicked += () =>
+            {
+                if (this.current.Parent == null)
+                {
+                    return;
+                }
+                
+                this.DeployNodeData(this.current.Parent);
+            };
         }
 
         public void AddCommand(string path, Action command)
@@ -63,6 +71,7 @@ namespace HKDebugger
             listView.itemsSource = listItems;
 
             this.document.Path.text = nodeData.FullPath;
+            this.current = nodeData;
         }
 
         public void InvokeCommand(NodeData nodeData)
