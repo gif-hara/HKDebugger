@@ -19,5 +19,9 @@ namespace HKDebugger
             }
         }
         private static GlobalSettings instance = null;
+
+        [SerializeField]
+        private List<Initializer> initializers;
+        public IReadOnlyList<Initializer> Initializers => this.initializers;
     }
 }

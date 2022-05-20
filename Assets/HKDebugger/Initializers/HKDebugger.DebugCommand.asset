@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42fb12b78a987da4387380db14e58748, type: 3}
-  m_Name: HKDebugger.GlobalSettings
+  m_Script: {fileID: 11500000, guid: 19d12feee0bc8c04ba301d09b2bb886d, type: 3}
+  m_Name: HKDebugger.DebugCommand
   m_EditorClassIdentifier: 
-  initializers:
-  - {fileID: 11400000, guid: 380d65b231a7113449d1575f61bb9c0b, type: 2}
+  documentPrefab: {fileID: -218061282144871910, guid: 355fccdd6fac16644811b49d8e55a7fb, type: 3}
