@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 
 namespace HKDebugger.DebugCommand
 {
-    public class DebugCommandPresenter
+    public class DebugCommandPresenter : Presenter
     {
         private NodeData root;
 
