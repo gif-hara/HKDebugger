@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace HKDebugger
+namespace HKDebugger.DebugCommand
 {
     /// <summary>
     /// DebugCommandのView

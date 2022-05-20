@@ -1,13 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using HKDebugger;
 using HKDebugger.UIElements;
-using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.UIElements;
 
-namespace HKDebugger
+namespace HKDebugger.DebugCommand
 {
     public class DebugCommandUIPresenter
     {

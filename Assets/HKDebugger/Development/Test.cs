@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using HKDebugger;
+using HKDebugger.DebugCommand;
 using HKDebugger.UIElements;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -47,6 +48,8 @@ public class Test : MonoBehaviour
         // listView.itemsSource = listItems;
 
         var debugCommandUIPresenter = new DebugCommandUIPresenter(this.document);
+        debugCommandUIPresenter.AddCommand("HKDebuggerSystem/Initialize", () => HKDebuggerSystem.Initialize());
+        debugCommandUIPresenter.AddCommand("HKDebuggerSystem/Finalize", () => HKDebuggerSystem.Finalize());
         debugCommandUIPresenter.AddCommand("Test0/Hoge/Command", () => Debug.Log("Command"));
         debugCommandUIPresenter.AddCommand("Test1/Hoge/Command", () => Debug.Log("Command"));
         debugCommandUIPresenter.AddCommand("Test2/Hoge/Command", () => Debug.Log("Command"));

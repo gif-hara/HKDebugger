@@ -1,3 +1,4 @@
+using HKDebugger.DebugCommand;
 using UnityEngine.UIElements;
 
 namespace HKDebugger.UIElements
