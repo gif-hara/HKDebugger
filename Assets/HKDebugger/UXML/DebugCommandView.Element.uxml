@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/HKDebugger/USS/Test.uss?fileID=7433441132597879392&amp;guid=6b96ec3ca8e9f00439961f0def1ad398&amp;type=3#Test" />
-    <HKDebugger.UIElements.Element class="element" style="height: 50px;">
+    <HKDebugger.DebugCommand.DebugCommandDocumentElement>
         <ui:Button display-tooltip-when-elided="true" usage-hints="None" style="width: auto; right: auto; white-space: nowrap; -unity-text-align: middle-left; overflow: flex-start; position: relative; align-items: auto; max-width: none; flex-basis: auto; justify-content: flex-start; flex-grow: 1; flex-shrink: 0; flex-direction: row; padding-left: 6px; margin-left: 3px; translate: 0 0; height: auto;">
             <ui:VisualElement name="Icon" class="element-icon" style="translate: 0 50%; bottom: 50%;" />
             <ui:Label text="Label" display-tooltip-when-elided="true" class="element-label" />
         </ui:Button>
-    </HKDebugger.UIElements.Element>
+    </HKDebugger.DebugCommand.DebugCommandDocumentElement>
 </ui:UXML>
